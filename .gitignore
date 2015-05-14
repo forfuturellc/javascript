@@ -1,0 +1,6 @@
+# gitbook's output
+_book/
+
+# directory used in deployment
+_repo/
+
