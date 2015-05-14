@@ -15,9 +15,8 @@ source script/utils.sh
 LOG_TITLE="deps"
 
 
-if [ ! hash gitbook > /dev/null 2>&1 ]
-then
+command -v gitbook > /dev/null 2>&1 || {
   log "installing gitbook globally" 0
-  npm install -g gitbook
-fi
+  npm install -g gitbook-cli
+}
 

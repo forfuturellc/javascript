@@ -20,8 +20,12 @@ log "cloning repo (afresh)" 0
 git clone "${REPO_URL}" _repo
 
 
-log "cd into repo and rm all files" 0
+log "cd into repo and checkout gh-pages branch" 0
 cd _repo
+git checkout gh-pages
+
+
+log "rm all files" 0
 git rm -rf *
 rm -rf *
 
